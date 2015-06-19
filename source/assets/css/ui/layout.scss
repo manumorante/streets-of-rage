@@ -1,0 +1,9 @@
+/**
+ * Layout
+ */
+
+*,
+*:after,
+*::before {
+  @include optimize-legibility;
+}

@@ -1,0 +1,8 @@
+// Config
+
+// Assets remote folder
+$source: "https://dl.dropboxusercontent.com/u/3256489/codepen/streets-of-rage";
+
+// SOR font face
+$sor_pixel: "#{$source}/fonts/sor/sor_pixel-webfont";
+@include font-face("SOR Pixel", font-files("#{$sor_pixel}.eot", "#{$sor_pixel}.woff", "#{$sor_pixel}.ttf", "#{$sor_pixel}.svg"));

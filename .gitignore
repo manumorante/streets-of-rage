@@ -1,0 +1,39 @@
+# General Gitignore file for front-end proyects
+# **********************************************
+# Manu Morante @unavezfui
+# Last update: January 04, 2015
+# https://gist.github.com/manumorante/6bc9e39ce86fd15ba007
+# Based on https://github.com/github/gitignore
+
+
+# Your ignore rules
+# *****************
+
+
+# SASS
+# *****************
+.sass-cache/
+.sass-cache/*
+*.css.map
+
+
+# Frameworks
+# *****************
+.idea/
+*.sublime-workspace
+*.sublime-project
+node_modules
+
+
+# OS X cache files
+# *****************
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+
+
+# Windows image file caches
+# *****************
+Thumbs.db
+ehthumbs.db

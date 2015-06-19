@@ -1,0 +1,27 @@
+@import "compass/css3";
+@import "compass/layout";
+
+.sega{
+  @include stretch;
+  background-color: #000;
+  z-index: 1;
+
+  .logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 110px;
+    margin-left: -175px;
+    margin-top: -55px;
+    background: transparent url("#{$source}/sega.png") center center no-repeat;
+    @include background-size(350px);
+
+    opacity: 0;
+    @include transition(opacity 1.4s ease-in);
+
+    @at-root { .step-1 & { opacity: 1 }}
+    @at-root { .step-2 & { opacity: 0 }}
+  }
+}
+

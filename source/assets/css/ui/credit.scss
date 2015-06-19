@@ -1,0 +1,10 @@
+@import "compass/css3";
+@import "compass/typography/text/nowrap";
+
+.credit{
+  a{
+    color: #FFF;
+    text-decoration: underline;
+    @include nowrap;
+  }
+}
