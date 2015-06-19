@@ -1,2 +1,1 @@
-# streets-of-rage
-Streets of Rage CSS Intro
+# Streets of Rage CSS Intro
