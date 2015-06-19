@@ -1,0 +1,64 @@
+//
+// Mixins
+//
+
+
+
+// General Optimize text Legibility, font antialiased
+//
+@mixin optimize-legibility {
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-stroke: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+
+
+// Border box
+//
+@mixin border-box {
+  @include box-sizing(border-box);
+}
+
+
+
+// Font face
+//
+@mixin font-face($family, $url) {
+  @font-face {
+    font-family: $family;
+    src: font-url('#{$url}.eot');
+    src: font-url('#{$url}.eot?#iefix') format('embedded-opentype'),
+    font-url('#{$url}.woff2') format('woff2'),
+    font-url('#{$url}.woff') format('woff'),
+    font-url('#{$url}.ttf') format('truetype'),
+    font-url('#{$url}.svg##{$url}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+
+
+// Height Ratio
+//
+// original height / original width x new width = new height
+// http://andrew.hedges.name/experiments/aspect_ratio/
+@mixin height-ratio($width, $ratio: 1 1, $variation:0) {
+  height: ((nth($ratio, 2) / nth($ratio, 1)) * $width) + $variation;
+}
+
+
+
+// Vendor Prefixes
+//
+@mixin prefix($property, $values...) {
+  @each $prefix in webkit, moz, ms, o {
+    -#{$prefix}-#{$property}: $values;
+  }
+  #{$property}: $values;
+}

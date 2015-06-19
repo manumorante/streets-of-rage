@@ -1,0 +1,55 @@
+// At Break v1.3
+// Manu Morante @unavezfui
+// Last update: 16/04/2015
+// http://github.com/manumorante/sass.at-break/
+//
+// Usage
+// .col {
+//   width: 100%;
+//   @include at-small{
+//    width: 50%;
+//   }
+// }
+
+@mixin at-break($breakpoint, $only: false) {
+
+  // Breakpoints (Bootstrap standard, mobile first)
+  $breakpoints: (
+    xsmall:  480px,
+     small:  768px,
+    medium:  992px,
+     large: 1200px
+  );
+
+  // Only
+  @if $only {
+    @if $breakpoint == xsmall{
+      @media (max-width: map-get($breakpoints, 'small')-1px) { @content; }
+
+    } @else if $breakpoint == small{
+      @media (min-width: map-get($breakpoints, 'small')) and (max-width: map-get($breakpoints, 'medium')-1px) { @content; }
+
+    } @else if $breakpoint == medium{
+      @media (min-width: map-get($breakpoints, 'medium')) and (max-width: map-get($breakpoints, 'large')-1px) { @content; }
+
+    } @else if $breakpoint == large{
+      @media (min-width: map-get($breakpoints, 'large')) { @content; }
+    }
+
+  } @else{
+    @media (min-width:  map-get($breakpoints, $breakpoint)) { @content; }
+  }
+}
+
+// Horizontal
+@mixin at-xsmall        { @include at-break(xsmall)       { @content; }}
+@mixin at-small         { @include at-break(small)        { @content; }}
+@mixin at-medium        { @include at-break(medium)       { @content; }}
+@mixin at-large         { @include at-break(large)        { @content; }}
+
+
+// Only
+@mixin only-xsmall      { @include at-break(xsmall, true) { @content; }}
+@mixin only-small       { @include at-break(small,  true) { @content; }}
+@mixin only-medium      { @include at-break(medium, true) { @content; }}
+@mixin only-large       { @include at-break(large,  true) { @content; }}
