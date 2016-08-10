@@ -115,6 +115,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman (~> 3.3.7)
+  middleman
   middleman-gh-pages
   ruby18_source_location
+
+BUNDLED WITH
+   1.10.6
