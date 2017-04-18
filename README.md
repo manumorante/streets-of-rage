@@ -1,24 +1,22 @@
-# Streets of Rage
+# Static Boosted
 
-!['Adam'](https://dl.dropboxusercontent.com/u/3256489/codepen/streets-of-rage/adam.png)
-!['Axel'](https://dl.dropboxusercontent.com/u/3256489/codepen/streets-of-rage/axel.png)
-!['Blaze'](https://dl.dropboxusercontent.com/u/3256489/codepen/streets-of-rage/blaze.png)
+Boilerplate to create static sites with Webpack, React and Bootstrap
 
-### CSS Intro
+[![Build Status](https://travis-ci.org/manumorante/static-boosted.svg?branch=master)](https://travis-ci.org/manumorante/static-boosted)
 
-#### Here:
-http://manumorante.github.io/streets-of-rage/
+## Install
 
-#### Collection on Codepen.io
-http://codepen.io/collection/DLPVvO/
+```
+$ npm install
+$ npm run watch
+```
 
+### Start server
 
-## License
+```
+$ node_modules/.bin/webpack-dev-server
+```
 
-Copyright (c) 2015 Manu Morante
+Visit the preview page here:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+https://manumorante.github.io/static-boosted/

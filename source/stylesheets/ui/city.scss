@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 .city{
   position: absolute;
   top: 0;
@@ -10,7 +8,7 @@
   background-color: #000;
 
   opacity: 0;
-  @include transition(opacity 2s);
+  transition: opacity 2s;
 
   .bg{
     position: absolute;
@@ -18,11 +16,11 @@
     left: 0;
     width: 900%;
     height: 100%;
-    background: #000 url(http://i.imgur.com/TMDYyks.png) 0 0 repeat-x;
-    @include transition(left 140s linear);
+    background: #000 url('http://i.imgur.com/TMDYyks.png') 0 0 repeat-x;
+    transition: left 140s linear;
   }
 
-  @at-root .step-2 &{
+  @at-root .step-2 & {
     opacity: 1;
 
     .bg{ left: -400%; }

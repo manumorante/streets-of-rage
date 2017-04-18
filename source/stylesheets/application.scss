@@ -1,12 +1,6 @@
-/**
- * Application
- */
-
-@import 'compass/css3';
-@import 'compass/reset';
 @import 'config';
-@import 'lib/at-break';
-@import 'lib/mixins';
+@import 'libs/at-break';
+@import 'libs/mixins';
 
 // Pages
 @import 'ui/layout';
@@ -15,4 +9,3 @@
 @import 'ui/city';
 @import 'ui/credit';
 @import 'ui/silence';
-@import 'ui/about';
