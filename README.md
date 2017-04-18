@@ -1,22 +1,17 @@
-# Static Boosted
+# Streets of Rage
 
-Boilerplate to create static sites with Webpack, React and Bootstrap
+!['Adam'](/source/assets/img/adam.png)
+!['Axel'](/source/assets/img/axel.png)
+!['Blaze'](/source/assets/img/blaze.png)
 
-[![Build Status](https://travis-ci.org/manumorante/static-boosted.svg?branch=master)](https://travis-ci.org/manumorante/static-boosted)
+### CSS Intro
 
-## Install
+#### Here:
+http://manumorante.github.io/streets-of-rage/
 
-```
-$ npm install
-$ npm run watch
-```
+#### Collection on Codepen.io
+http://codepen.io/collection/DLPVvO/
 
-### Start server
 
-```
-$ node_modules/.bin/webpack-dev-server
-```
-
-Visit the preview page here:
-
-https://manumorante.github.io/static-boosted/
+---
+Created 2015 - Last update 2017 - Manu Morante
