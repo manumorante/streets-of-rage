@@ -7,7 +7,7 @@
 ### CSS Intro
 
 #### Here:
-http://manumorante.github.io/streets-of-rage/
+http://manumorante.com/streets-of-rage/
 
 #### Collection on Codepen.io
 http://codepen.io/collection/DLPVvO/
