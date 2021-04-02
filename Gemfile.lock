@@ -28,7 +28,7 @@ GEM
       sass (>= 3.2, < 3.5)
     erubis (2.7.0)
     execjs (2.2.2)
-    ffi (1.9.6)
+    ffi (1.15.0)
     haml (4.0.5)
       tilt
     hike (1.2.3)
