@@ -1,0 +1,105 @@
+//
+//  _____ ___ ___ _ _    _____ ___ ___ ___ ___| |_ ___
+// |     | .'|   | | |  |     | . |  _| .'|   |  _| -_|
+// |_|_|_|__,|_|_|___|  |_|_|_|___|_| |__,|_|_|_| |___|
+//
+
+@import '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css';
+
+// Configuration
+$color-manu-text: white;
+$color-manu-icons: silver;
+$color-manu-bg: black;
+
+// About Manu
+#about-Manu {
+  *,
+  *:after,
+  *::before {
+    outline: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-text-stroke: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  opacity: 0;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+
+  padding: 20px;
+
+  text-align: center;
+  color: $color-manu-text;
+  cursor: default;
+  background-color: rgba($color-manu-bg,.9);
+  // @include transition(all .8s);
+  // @include box-shadow(rgba(black, .4) 0px 2px 4px inset);
+  pointer-events: none;
+
+  &:hover {
+    background-color: rgba($color-manu-bg,1);
+  }
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .manu {
+    display: inline-block;
+    font-family: 'Arial';
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0 4px;
+
+    .fa-heart {
+      color: red;
+      // @include animation(pulse .8s infinite alternate ease-in);
+    }
+  }
+  // &:hover .fa-heart{
+  //   @include animation(pulse .2s infinite alternate ease-out);
+  // }
+
+  a {
+    margin: 0 2px;
+    padding: 6px;
+    color: $color-manu-icons;
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba(white,.2);
+    }
+  }
+
+  .closebox,
+  .thisbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 9px;
+    background: none;
+
+    &:hover{
+      background: none;
+    }
+  }
+
+  .closebox:hover {
+    color: red;
+  }
+
+  .thisbox {
+    right: 16px;
+  }
+}
+
+// @include keyframes(pulse) {
+//   0% { @include transform(scale(0.9)) }
+//   100% { @include transform(scale(1.2)) }
+// }
