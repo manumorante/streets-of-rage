@@ -1,0 +1,19 @@
+.Sega {
+  background-color: #000;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 110px;
+  margin-left: -175px;
+  margin-top: -55px;
+  background-color: red;
+  background-size: 350px;
+
+  opacity: 0;
+  transition: opacity 1.4s ease-in;
+}

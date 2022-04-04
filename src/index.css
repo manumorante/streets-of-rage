@@ -1,0 +1,14 @@
+@import url(normalize.css);
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+}
