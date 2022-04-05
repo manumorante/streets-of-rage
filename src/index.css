@@ -1,6 +1,13 @@
 @import url(normalize.css);
 
+@font-face {
+  font-family: 'streets-of-rage-2-3';
+  src: local('streets-of-rage-2-3'),
+    url('/font/streets-of-rage-2-3.ttf') format('truetype');
+}
+
 body {
+  font-family: 'streets-of-rage-2-3';
   width: 100vw;
   height: 100vh;
 }

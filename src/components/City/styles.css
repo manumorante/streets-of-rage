@@ -1,28 +1,32 @@
-.City {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+:root {
+  --size: 844px;
+  --speed: 50s;
 }
 
-.City__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 500%;
-  height: 100%;
-  background: #000 url('/src/img/city.png') 0 0 repeat-x;
-  animation: scroll 160s infinite linear;
+@media (min-width: 1280px) {
+  :root {
+    --size: 1280px;
+  }
 }
 
 @keyframes scroll {
-  from {
-    left: 0%;
+  0% {
+    background-position: var(--size) var(--size);
   }
+}
 
-  to {
-    left: -500%;
-  }
+.City {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: var(--size);
+  transform: translateY(-50%);
+
+  z-index: 1;
+  background-image: url('/img/bg.png');
+  background-repeat: repeat;
+  background-position: 0 var(--size);
+  background-size: auto var(--size);
+  animation: scroll var(--speed) infinite linear;
 }

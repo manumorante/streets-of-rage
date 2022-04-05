@@ -1,5 +1,5 @@
 import React from 'react'
-import sega from '../../img/sega.png'
+import sega from './sega.png'
 import './styles.css'
 
 export default function Sega() {
