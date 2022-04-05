@@ -9,13 +9,21 @@
 }
 
 .Statement__text {
-  font-family: 'streets-of-rage-2-3';
+  font-family: 'streets-of-rage';
   position: absolute;
   top: 100%;
-  padding: 32px;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
   text-transform: uppercase;
   font-style: italic;
   animation: scrolltext 40s linear;
+}
+
+@media (min-width: 1000px) {
+  .Statement__text {
+    width: 600px;
+  }
 }
 
 @keyframes scrolltext {

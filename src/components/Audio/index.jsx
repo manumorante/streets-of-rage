@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useAudio } from '../../useAudio'
 import './styles.css'
 
-export default function Audio() {
+export default function Audio({ opt }) {
+  const { state, dispatch } = opt
   const [playing, toggle] = useAudio('/audio/streets-of-rage.mp3')
+
+  useEffect(() => {
+    if (state.play) {
+      toggle()
+    }
+  }, [state.play])
+
   return (
     <div className='Audio' onClick={toggle}>
       {playing ? (

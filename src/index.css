@@ -1,13 +1,13 @@
 @import url(normalize.css);
 
 @font-face {
-  font-family: 'streets-of-rage-2-3';
-  src: local('streets-of-rage-2-3'),
-    url('/font/streets-of-rage-2-3.ttf') format('truetype');
+  font-family: 'streets-of-rage';
+  src: local('streets-of-rage'),
+    url('/font/streets-of-rage.ttf') format('truetype');
 }
 
 body {
-  font-family: 'streets-of-rage-2-3';
+  font-family: 'streets-of-rage';
   width: 100vw;
   height: 100vh;
 }
@@ -18,4 +18,32 @@ body {
   overflow: hidden;
   background: #000;
   color: #fff;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

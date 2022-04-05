@@ -3,7 +3,13 @@
   --speed: 50s;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) and (min-height: 1000px) {
+  :root {
+    --size: 1000px;
+  }
+}
+
+@media (min-width: 1280px) and (min-height: 1280px) {
   :root {
     --size: 1280px;
   }

@@ -1,22 +1,28 @@
-import React, { useState } from 'react'
+import React, { useReducer } from 'react'
 import Sega from './components/Sega'
 import Statement from './components/Statement'
 import City from './components/City'
 import Audio from './components/Audio'
 
-function nextFrame() {
-  console.log('nextFrame')
+function reducer(state, action) {
+  switch (action.type) {
+    case 'PLAY':
+      console.log('play')
+      return { ...state, play: true }
+    default:
+      throw new Error()
+  }
 }
 
 export default function App() {
-  const [frame, setFrame] = useState([])
+  const [state, dispatch] = useReducer(reducer, { playing: false })
 
   return (
     <main className='App'>
-      <Sega />
-      <Statement />
+      <Sega opt={{ state, dispatch }} />
+      {/* <Statement /> */}
       <City />
-      <Audio />
+      <Audio opt={{ state, dispatch }} />
     </main>
   )
 }
