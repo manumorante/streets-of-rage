@@ -3,7 +3,7 @@ import { useAudio } from '../../useAudio'
 import './styles.css'
 
 export default function Audio() {
-  const [playing, toggle] = useAudio('/src/audio/streets-of-rage.mp3')
+  const [playing, toggle] = useAudio('/audio/streets-of-rage.mp3')
   return (
     <div className='Audio' onClick={toggle}>
       {playing ? (

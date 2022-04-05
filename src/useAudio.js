@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react'
 
 export const useAudio = (url) => {
-  const [audio] = useState(new Audio(url))
+  const theAudio = new Audio(url)
+  theAudio.setAttribute('preload', 'metadata')
+  
+  const [audio] = useState(theAudio)
   const [playing, setPlaying] = useState(false)
 
   const toggle = () => setPlaying(!playing)
