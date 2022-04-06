@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './styles.css'
 
-export default function Statement() {
+export default function Manifest({ opt }) {
+  const { state, dispatch } = opt
+  const [statusClass, setStatusClass] = useState('')
+
+  useEffect(() => {
+    if (state.play) {
+      setStatusClass('scroll-up')
+    }
+  }, [state.play])
+
   return (
-    <div className='Statement'>
-      <div className='Statement__text'>
+    <div className='Manifest inset-0'>
+      <div className={`Manifest__text ${statusClass}`}>
         <p>
           This city was once a happy. Peaceful place... Until one day. A
           powerful secret criminal organization took over. This vicious
@@ -18,7 +27,7 @@ export default function Statement() {
           and Blaze Fielding. They are willing to risk anything... Even their
           lives... On the...
         </p>
-        <h2>Streets of Rage</h2>
+        <h2 className='Manifest__title'>Streets of Rage</h2>
       </div>
     </div>
   )

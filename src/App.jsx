@@ -1,28 +1,19 @@
 import React, { useReducer } from 'react'
+import { reducer, initialState } from './js/reducer'
 import Sega from './components/Sega'
-import Statement from './components/Statement'
 import City from './components/City'
-import Audio from './components/Audio'
-
-function reducer(state, action) {
-  switch (action.type) {
-    case 'PLAY':
-      console.log('play')
-      return { ...state, play: true }
-    default:
-      throw new Error()
-  }
-}
+import Manifest from './components/Manifest'
+import Music from './components/Music'
 
 export default function App() {
-  const [state, dispatch] = useReducer(reducer, { playing: false })
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
     <main className='App'>
       <Sega opt={{ state, dispatch }} />
-      {/* <Statement /> */}
+      <Manifest opt={{ state, dispatch }} />
       <City />
-      <Audio opt={{ state, dispatch }} />
+      <Music opt={{ state, dispatch }} />
     </main>
   )
 }

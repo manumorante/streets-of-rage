@@ -1,4 +1,5 @@
-@import url(normalize.css);
+@import url('vars.css');
+@import url('normalize.css');
 
 @font-face {
   font-family: 'streets-of-rage';
@@ -20,14 +21,28 @@ body {
   color: #fff;
 }
 
+.inset-0 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .fade-in {
   opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn var(--speed-2xl) ease-in-out forwards;
 }
 
 .fade-out {
   opacity: 1;
-  animation: fadeOut 2s ease-in-out forwards;
+  animation: fadeOut var(--speed-2xl) ease-in-out forwards;
 }
 
 @keyframes fadeIn {

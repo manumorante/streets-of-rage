@@ -1,0 +1,10 @@
+.Audio {
+  position: fixed;
+  z-index: 3;
+  top: var(--l);
+  right: var(--l);
+
+  width: var(--l);
+  height: var(--l);
+  cursor: pointer;
+}

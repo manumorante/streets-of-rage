@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import sega from './sega.png'
+import sega from '/img/sega.png'
 import './styles.css'
 
 export default function Sega({ opt }) {
@@ -17,7 +17,7 @@ export default function Sega({ opt }) {
   }, [state.play])
 
   return (
-    <div className={`Sega ${statusClass}`} onClick={handleClick}>
+    <div className={`Sega inset-0 center ${statusClass}`} onClick={handleClick}>
       <img className='Sega__img' src={sega} alt='Sega' />
     </div>
   )

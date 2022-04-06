@@ -30,7 +30,7 @@
   transform: translateY(-50%);
 
   z-index: 1;
-  background-image: url('/img/bg.png');
+  background-image: url('/img/city.png');
   background-repeat: repeat;
   background-position: 0 var(--size);
   background-size: auto var(--size);

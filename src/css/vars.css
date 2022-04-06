@@ -1,0 +1,33 @@
+:root {
+  /*
+    Spacing
+    Range: 0-64px
+    No `size` or similar prefix
+  */
+  --0: 0px;
+  --px: 1px;
+  --4xs: 2px;
+  --3xs: 4px;
+  --2xs: 6px;
+  --xs: 8px;
+  --s: 12px;
+  --m: 16px;
+  --l: 24px;
+  --xl: 32px;
+  --2xl: 40px;
+  --3xl: 48px;
+  --4xl: 64px;
+
+  /*
+    Speed
+    Range: 0-1s
+    No `speed` or similar prefix
+  */
+  --speed-xs: .1s;
+  --speed-s: .2s; /* Hovers, mouse events, ... */
+  --speed-m: .4s; /* Show/hide popovers, modals, ... */
+  --speed-l: .8s;
+  --speed-xl: 1s;
+  --speed-2xl: 2s;
+  --speed-3xl: 3s;
+}

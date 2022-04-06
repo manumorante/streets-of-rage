@@ -1,17 +1,9 @@
 .Sega {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 3;
 }
 
 .Sega__img {
   width: 230px;
   height: auto;
-  animation: fadeIn 3s;
+  animation: fadeIn var(--speed-3xl) ease-in-out forwards;
 }
